@@ -9,7 +9,7 @@ const Portfolio = () => {
         <h1>Portfolio - Aditya</h1>
         {/* ss of the portfolio */}
         {/* <img src="" /> */}
-        <p>This is a portfolio website with my introduction, projects, and a contact section.</p>
+        <p>This is a portfolio website with my introduction, projects, and a contact section made completely in React.</p>
         <a href="https://github.com/aditya303030/portfolio-Aditya" rel="noreferrer" target= '_blank'>
           <FaGithub />
         </a>
