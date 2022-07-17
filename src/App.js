@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/content/navbar';
 import Main from './components/content/main';
+import ContactForm from './components/contact/contactForm';
 import ProjectSection from './components/project-section/projectsSection';
 // import {
 //   BrowserRouter,
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <Main />
       <ProjectSection />
+      <ContactForm />
     </div>
   );
 }
