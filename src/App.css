@@ -94,6 +94,11 @@ body {
   outline: none;
 }
 
+.input-c.name:valid + .placeholder {
+  top: 85px;
+  background-color: #fff;
+}
+
 .input-c.name:focus + .placeholder {
   top: 85px;
   background-color: #fff;
