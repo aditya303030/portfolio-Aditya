@@ -1,7 +1,7 @@
 import React,{useRef} from "react";
 import '../../App.css'
 import emailjs from '@emailjs/browser';
-//sservice_p8dentd
+
 const ContactForm = () => {
   const form = useRef()
   //sending an email
@@ -15,15 +15,19 @@ const ContactForm = () => {
       })
   }
   return(
-    <form ref={form} className="form-container" onSubmit={sendEmail}>
-      <label>Name</label>
-      <input className="input-c" type="text" name="user_name" />
-      <label>Email</label>
-      <input className="input-c" type="email" name="user_email" />
-      <label>Message</label>
-      <textarea className="input-c" name="message" />
-      <input className="submit-btn" type="submit" value="Send" />
-    </form>
+    <div className="form-container">
+      <form ref={form} className="form" onSubmit={sendEmail}>
+        <h2>Contact Me</h2>
+        <input className="input-c name" type="text" name="user_name" />
+        <label className="placeholder name">Your Name</label>
+        <input className="input-c email" type="email" name="user_email" />
+        <label className="placeholder email">Email Adress</label>
+        <input className="input-c message" name="message" />
+        <label className="placeholder message" >Your message for me...</label>
+        <input className="submit-btn" type="submit" value="Send" />
+      </form>
+    </div>
+    
   )
 }
 

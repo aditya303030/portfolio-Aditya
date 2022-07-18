@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 body {
   margin: 1rem;
   background-color: whitesmoke;
@@ -56,6 +58,23 @@ body {
   margin: 1rem;
 }
 
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow:
+  2.5px 12.3px 10px rgba(0, 0, 0, 0.016),
+  20px 98px 80px rgba(0, 0, 0, 0.07);
+  width: 20rem;
+  background: white;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 7rem;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+}
+
 .form-container {
   display: flex;
   justify-content: center;
@@ -64,11 +83,39 @@ body {
 }
 
 .input-c {
-  border: none;
+  border: 0.5px solid black;
   border-radius: 5px;
-  height: 1.5rem;
-  width: 15rem;
+  height: 2rem;
+  width: 17rem;
   margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: #fff;
+  position: relative;
+  outline: none;
+}
+
+.input-c.name:focus + .placeholder {
+  top: 85px;
+  background-color: #fff;
+}
+
+.input-c.name:valid + .placeholder.name:valid {
+  top: 85px;
+  background-color: #fff;
+}
+
+.input-c.email:focus + .placeholder {
+  top: 150px;
+  background-color: #fff;
+}
+
+.input-c.message:focus + .placeholder {
+  top: 215px;
+  background-color: #fff;
+}
+
+.input-c.message {
+  height: 5rem;
 }
 
 .submit-btn {
@@ -79,4 +126,26 @@ body {
   background:rgb(20, 112, 205);
   color: white;
   padding: 0.5rem 1rem;
+}
+
+.placeholder{
+  color: #666;
+  position: absolute;
+  transition: 0.2s;
+  pointer-events: none ;
+}
+
+.placeholder.name {
+  top:110px;
+  left: 40px;
+}
+
+.placeholder.email {
+  top: 175px;
+  left:40px;
+}
+
+.placeholder.message {
+  top: 235px;
+  left: 40px;
 }
